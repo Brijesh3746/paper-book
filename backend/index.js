@@ -16,9 +16,9 @@ app.use(express.json());
 app.use("/api/v1", pdfRoutes);
 
 // Homepage Route
-// app.get("/", (req, res) => {
-//     res.send("<h1>This Is My HomePage</h1>");
-// });
+app.get("/", (req, res) => {
+    res.send("<h1>This Is My HomePage</h1>");
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
